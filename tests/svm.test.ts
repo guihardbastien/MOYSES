@@ -1,5 +1,5 @@
 import * as Chai from 'chai';
-import Svm from '../lib/svm'
+import Svm from '../lib/core/engine/svm'
 import DatasetGenerator from '../lib/utils/dataset_generation/dataset_generator';
 
 const should = Chai.should();
@@ -18,6 +18,9 @@ describe('testing bool queries', () => {
       const negativeResult = svm.predict([50,50]);
 
       console.log(positiveResult,negativeResult)
+
+      positiveResult.should.equal(1);
+      negativeResult.should.equal(-1);
 
     });
 });

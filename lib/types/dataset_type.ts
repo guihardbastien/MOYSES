@@ -1,7 +1,7 @@
 /**
- * An interface describing how a dataset should be formatted 
+ * An interface describing how a dataset should be formatted
  *
- * For instance, 
+ * For instance,
  * ```ts
  * ```
  */
@@ -9,7 +9,7 @@ export default interface IDataset {
     /**
      * Feature vectors of the dataset
      */
-    featureVectors: number[][];
+    points: number[][];
 
     /**
      * Associated labels for supervised learning
