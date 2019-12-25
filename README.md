@@ -5,6 +5,7 @@
 MOYSES is a Support Vector Machine (SVM) library made using TypeScript.
 
 ## Overview
+![MOSES](https://media.giphy.com/media/12Wn7ox4gWevAs/giphy.gif)
 
 This section should contain an overview of the project with 5 sections
 
