@@ -9,7 +9,7 @@ const should = Chai.should();
  */
 describe('testing support vector machine', () => {
     
-    it('Generate tensor', () => {
+    it('should classify data correctly', () => {
 
       const dataset = new DatasetGenerator('CIRCULAR', 10, 2).generate();
       const svm = new Svm(dataset, 5, 'RBF', 15 );

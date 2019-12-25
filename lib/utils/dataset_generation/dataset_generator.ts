@@ -3,15 +3,7 @@ import IDataset from '../../types/dataset_type';
 
 /**
  * DatasetGenerator class:
- *
- * Will generate tensors given a supported "shape".
- *
- * For instance, the following code :
- * ```typescript
- * ```
- * will generate:
- * ```typescript
- * ```
+ * Will generate datasets given a supported "shape" and a number of fearure vectors
  */
 class DatasetGenerator {
 

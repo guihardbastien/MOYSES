@@ -5,12 +5,11 @@ import * as Utils from '../../utils/utils';
 /**
  * Internal state of a support vector machine:
  *
- * For instance, the following code :
+ * Basic usage :
  * ```typescript
- * ```
- *
- * will generate:
- * ```typescript
+ *      const dataset = new DatasetGenerator('CIRCULAR', 10, 2).generate();
+ *      const svm = new Svm(dataset, 5, 'RBF', 15 );
+ *      const negativeResult = svm.predict([50,50]);
  * ```
  */
 class Svm {
