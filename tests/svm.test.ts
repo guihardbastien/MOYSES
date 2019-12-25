@@ -7,7 +7,7 @@ const should = Chai.should();
 /**
  * Query related tests
  */
-describe('testing bool queries', () => {
+describe('testing support vector machine', () => {
     
     it('Generate tensor', () => {
 

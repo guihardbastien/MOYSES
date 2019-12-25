@@ -40,7 +40,7 @@ export function randomSpherePoint(x0:number, y0:number, z0:number, radius:number
 }
 
 /**
- * Generates vectors and associated labels belonging to a linearly separable dataset
+ * Generates vectors belonging to a linearly separable dataset
  * @param boundaries
  *
  * TODO turn into N-dimension set
@@ -56,7 +56,7 @@ export function randomLinearlySeparablePoint(boundaries:number[]): {[key:string]
 }
 
 /**
- * Generates vectors and associated labels belonging to a xor-like dataset
+ * Generates vectors belonging to a xor-like dataset
  * @param boundaries
  * @param dim
  *

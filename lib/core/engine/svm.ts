@@ -176,9 +176,9 @@ class Svm {
             case 'RBF':
                 return Kernels.gaussianKernel(xi, xj, this._rbfSigma);
             case 'LINEAR':
-                return Kernels.linearKernel();
+                throw Error('Kernel not implemented yet');
             case 'TAN_H':
-                return Kernels.tanHKernel();
+                throw Error('Kernel not implemented yet');
             default:
                 throw Error('INVALID KERNEL');
         }

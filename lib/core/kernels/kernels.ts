@@ -11,17 +11,3 @@ export function gaussianKernel(xi:number[], xj:number[], sigma:number):number {
     }
     return Math.exp(-s / (2 * sigma * sigma));
 }
-
-/**
- * Applies linear kernel
- */
-export function linearKernel():number {
-    throw Error('linear kernel not implemented yet');
-}
-
-/**
- * Applies tan h kernel
- */
-export function tanHKernel():number {
-    throw Error('tan h kernel not implemented yet');
-}
