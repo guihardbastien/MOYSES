@@ -1,7 +1,7 @@
 import { randomFloat } from '../utils';
 
 /**
- * Generates vectors and associated labels belonging to a ring given its center and boundaries
+ * Generates vectors belonging to a ring given its center and boundaries
  * @param boundaries
  * @param center
  * @param radius
@@ -21,7 +21,7 @@ export function randomRingPoint(
 }
 
 /**
- * genrate point inside sphere
+ * generate point inside sphere
  * @param x0
  * @param y0
  * @param z0

@@ -2,61 +2,74 @@
 
 ## Description
 
-MOYSES is a Support Vector Machine (SVM) library made using TypeScript.
+MOYSES is a Support Vector Machine (SVM) library for node.js using TypeScript.
+It's used for binary classification purposes using n-dimensional datasets.
 
 ## Overview
 ![MOSES](https://media.giphy.com/media/12Wn7ox4gWevAs/giphy.gif)
 
-This section should contain an overview of the project with 5 sections
-
-- Directory structure explaining the different files and their purpose.
-- Description of every features
-- How to contribute to this library
-- How to deploy the library (build it for production-ready projects)
-- How to use: provide some information to get the user started. 
-
 ### Directory structure 
+```bash
+├── lib
+│   ├── core
+│   │   ├── engine
+│   │   │   └── svm.ts
+│   │   └── kernels
+│   │       └── kernels.ts
+│   ├── types
+│   │   └── dataset_type.ts
+│   ├── utils
+│   │   ├── dataset_generation
+│   │   │   ├── dataset_generator.ts
+│   │   │   └── generate_points.ts
+│   │   └── utils.ts
+│   └── index.ts
+├── tests
+│   ├── generate_dataset.test.ts
+│   └── svm.test.ts
+├── .gitignore
+├── LICENSE
+├── README.md
+├── package-lock.json
+├── package.json
+├── tsconfig.json
+└── tslint.json
+```
+
 
 ### Feature description
 
-### How to contribute to this library? 
+TBA
 
 ### How to build the library to be used in production-ready projects?
 
+TBA
+
 ### How to use?
+
+TBA
 
 ## NPM custom commands
 
-### prebuild
+- `build`: Build the JavaScript files. 
+- `build:watch`: Build the JavaScript files in watch mode. 
+- `test`: Run jest in test mode.
+- `test:watch`: Run jest in interactive test mode.
+- `docs`: Generate the docs directory.
+- `lint`: Runs linter on the whole project.
 
-Remove the dist directory using rimraf (rm -rf for node).
-
-### build
-
-Compile the library, generate the docs using typedoc.
-
-### test
-
-Run jest for testing and output coverage in the `coverage` directory.
-
-### test:watch
-
-Run jest in interactive test mode.
-
-### test:prod
-
-Run linting using tslint and jest for testing
-
-### lint
-
-Run linting
-
-### docs
-
-Generate the documentation for the library 
-
-Add other interesting commands that you've added in the package.json file
 
 ## Other/Optional considerations
 
-This section describes optional or other considerations related to this particular library
+The model converges, however it is a simplified version of the sequential minimum optimisation algorithm published by John C.Platt.
+
+Please follow the links below for more informations on the model.
+
+-   https://www.microsoft.com/en-us/research/wp-content/uploads/2016/02/tr-98-14.pdf
+-   http://cs229.stanford.edu/materials/smo.pdf
+
+## License
+
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT) 
+
+*Bastien GUIHARD*
