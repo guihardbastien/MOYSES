@@ -1,5 +1,7 @@
 # MOYSES
 
+[![npm version](https://badge.fury.io/js/node-svm-smo.svg)](https://badge.fury.io/js/moyses)
+
 ## Description
 
 MOYSES is a Support Vector Machine (SVM) library for node.js using TypeScript.
