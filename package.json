@@ -19,13 +19,15 @@
         "test:watch": "npx jest --coverage --watch",
         "test:prod": "npm run lint && npm run test -- --no-cache",
         "lint": "npx tslint --project tsconfig.json -t codeFrame 'lib/**/*.ts' 'test/**/*.ts'",
-        "docs": "npx typedoc --out docs --target es6 --theme minimal --mode file lib"
+        "docs": "npx typedoc --out docs --target es6 --theme minimal --mode file lib",
+        "make-badges": "node_modules/.bin/jest-badges-readme"
     },
     "dependencies": {
         "@types/node": "^11.13.20",
         "console-scatter-plot": "^1.0.1"
     },
     "devDependencies": {
+        "@olavoparno/jest-badges-readme": "^1.4.0",
         "@types/chai": "^4.2.3",
         "@types/jest": "^23.3.14",
         "@types/sinon": "^7.0.13",
