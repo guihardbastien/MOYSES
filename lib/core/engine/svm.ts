@@ -11,6 +11,7 @@ import * as Utils from '../../utils/utils';
  *      const svm = new Svm(dataset, 5, 'RBF', 15 );
  *      const negativeResult = svm.predict([50,50]);
  * ```
+ * TODO Check data.length
  */
 class Svm {
 

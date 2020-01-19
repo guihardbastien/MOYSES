@@ -6,7 +6,7 @@
  * ```
  */
 export default interface IDataset {
-    
+
     /**
      * Feature vectors of the dataset
      */

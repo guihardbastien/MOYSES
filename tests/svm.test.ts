@@ -1,26 +1,49 @@
 import * as Chai from 'chai';
 import Svm from '../lib/core/engine/svm'
-import DatasetGenerator from '../lib/utils/dataset_generation/dataset_generator';
 
 const should = Chai.should();
 
+const circularDataset = {
+  points: [
+    [ 77.08537142627756, 60.7455136985482 ],
+    [ 54.94324221651883, 63.78584077042318 ],
+    [ 45.124087171506936, 80.97650097253724 ],
+    [ 62.00480777917741, 49.642444449970675 ],
+    [ 56.958382663885864, 81.27710664286386 ],
+    [ 52.72767259658451, 66.03517399586579 ],
+    [ 19.518515661340157, 35.12014495118882 ],
+    [ 58.87894639269981, 59.27927960679746 ],
+    [ 13.59822313333904, 61.66342807818599 ],
+    [ 37.01348768362775, 54.679365456721584 ],
+    [ 85.01654232561876, 46.57532675823407 ],
+    [ 34.70627848361286, 44.84248665899513 ],
+    [ 63.443893468418494, 74.07028656564599 ],
+    [ 61.456705623249455, 41.09439124577563 ],
+    [ 84.26782294646438, 26.269714017498337 ],
+    [ 37.44407046741475, 50.98956479733988 ],
+    [ 37.53801531593166, 79.73505569185346 ],
+    [ 61.308207468398585, 44.41090753575729 ],
+    [ 49.57073028314457, 5.715350047914129 ],
+    [ 63.640430592148775, 39.56876863124383 ]
+  ],
+  labels: [
+     1, -1,  1, -1,  1, -1,  1,
+    -1,  1, -1,  1, -1,  1, -1,
+     1, -1,  1, -1,  1, -1
+  ]
+}
+
+const svm = new Svm(circularDataset, 5, 'RBF', 15 );
+
 /**
- * Query related tests
+ * Engine#SVM related tests
  */
 describe('testing support vector machine', () => {
     
     it('should classify data correctly', () => {
-
-      const dataset = new DatasetGenerator('CIRCULAR', 10, 2).generate();
-      const svm = new Svm(dataset, 5, 'RBF', 15 );
-
       const positiveResult = svm.predict([0,0]);
       const negativeResult = svm.predict([50,50]);
-
-      console.log(positiveResult,negativeResult)
-
       positiveResult.should.equal(1);
       negativeResult.should.equal(-1);
-
     });
 });
