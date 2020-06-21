@@ -106,5 +106,3 @@ export default class DatasetGenerator {
         return { points: this._points, labels: this._labels };
     }
 }
-
-export default DatasetGenerator;

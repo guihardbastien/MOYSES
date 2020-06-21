@@ -220,5 +220,3 @@ export default class Svm {
     }
 
 }
-
-export default Svm;
