@@ -5,7 +5,7 @@ import IDataset from '../../types/dataset_type';
  * DatasetGenerator class:
  * Will generate datasets given a supported "shape" and a number of fearure vectors
  */
-class DatasetGenerator {
+export default class DatasetGenerator {
 
     /**
      * Array of generated points
