@@ -13,7 +13,7 @@ import * as Utils from '../../utils/utils';
  * ```
  * TODO Check data.length
  */
-class Svm {
+export default class Svm {
 
     /**
      * rbf sigma
