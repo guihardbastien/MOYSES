@@ -51,7 +51,7 @@ import * as Moyses from 'moyses'
 const dataset = new Moyses.DatasetGenerator('CIRCULAR',10).generate();
 
 //instanciate SVM
-const svm = new Moyses.SVM(circularDataset, 5, 'RBF', 15 );
+const svm = new Moyses.SVM(dataset, 5, 'RBF', 15 );
 
 //classify data
 const positiveResult = svm.predict([0,0]);
