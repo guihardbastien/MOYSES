@@ -26,6 +26,7 @@ It's used for binary classification purposes using n-dimensional datasets.
     │   ├── dataset_generator.ts
     │   └── generate_points.ts
     └── utils.ts
+    
 ```
 
 ### How to build the library to be used in production-ready projects?
