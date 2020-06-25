@@ -12,30 +12,20 @@ It's used for binary classification purposes using n-dimensional datasets.
 
 ### Directory structure 
 ```bash
-├── lib
-│   ├── core
-│   │   ├── engine
-│   │   │   └── svm.ts
-│   │   └── kernels
-│   │       └── kernels.ts
-│   ├── types
-│   │   └── dataset_type.ts
-│   ├── utils
-│   │   ├── dataset_generation
-│   │   │   ├── dataset_generator.ts
-│   │   │   └── generate_points.ts
-│   │   └── utils.ts
-│   └── index.ts
-├── tests
-│   ├── generate_dataset.test.ts
-│   └── svm.test.ts
-├── .gitignore
-├── LICENSE
-├── README.md
-├── package-lock.json
-├── package.json
-├── tsconfig.json
-└── tslint.json
+.
+├── core
+│   ├── engine
+│   │   └── svm.ts
+│   └── kernels
+│       └── kernels.ts
+├── index.ts
+├── types
+│   └── dataset_type.ts
+└── utils
+    ├── dataset_generation
+    │   ├── dataset_generator.ts
+    │   └── generate_points.ts
+    └── utils.ts
 ```
 
 ### How to build the library to be used in production-ready projects?
