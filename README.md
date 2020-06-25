@@ -48,7 +48,7 @@ It's used for binary classification purposes using n-dimensional datasets.
 import * as Moyses from 'moyses'
 
 // will generate 10 pairs of labeled data you might as well wanna use your own dataset
-const dataset = new Moyses.DatasetGenerator('CIRCULAR',10).generate();
+const dataset: Moyses.IDataset = new Moyses.DatasetGenerator('CIRCULAR',10).generate();
 
 //instanciate SVM
 const svm = new Moyses.SVM(dataset, 5, 'RBF', 15 );
@@ -57,8 +57,8 @@ const svm = new Moyses.SVM(dataset, 5, 'RBF', 15 );
 const positiveResult = svm.predict([0,0]);
 const negativeResult = svm.predict([50,50]);
 
-
 ```
+
 #### Svm arguments : 
 - `dataset`: **type: IDataset** Interface can be found in lib/types/dataset_type.ts or see example below. 
 - `c`: **type: number** c parameter for soft margin classification. 
@@ -76,7 +76,7 @@ Note: Dataset boundaries are fixed. This should be fixed at some point..
 #### Example dataset : 
 
 ```typescript
-const circularDataset = {
+const circularDataset: IDataset = {
   points: [
     [ 77.08537142627756, 60.7455136985482 ],
     [ 54.94324221651883, 63.78584077042318 ],
